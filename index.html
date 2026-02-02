@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Profile README View</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Profile README View</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -36,7 +42,7 @@
             },
         }
     </script>
-<style type="text/tailwindcss">
+    <style type="text/tailwindcss">
         @layer utilities {
             .code-glow {
                 text-shadow: 0 0 8px rgba(0, 255, 64, 0.4);
@@ -65,162 +71,190 @@
             min-height: max(884px, 100dvh);
         }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
 <body class="bg-background-dark text-slate-100 font-display">
-<div class="flex h-screen w-full overflow-hidden">
-<aside class="w-16 flex flex-col items-center py-4 bg-sidebar-dark border-r border-border-dark shrink-0">
-<div class="flex flex-col gap-6 items-center w-full">
-<div class="w-full flex justify-center py-2 text-slate-500 hover:text-primary transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-2xl">file_copy</span>
-</div>
-<div class="w-full flex justify-center py-2 text-slate-500 hover:text-primary transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-2xl">search</span>
-</div>
-<div class="w-full flex justify-center py-2 text-slate-500 hover:text-primary transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-2xl">account_tree</span>
-</div>
-<div class="sidebar-icon-active w-full flex justify-center py-2 text-primary">
-<span class="material-symbols-outlined text-2xl">person</span>
-</div>
-</div>
-<div class="mt-auto flex flex-col gap-6 items-center w-full">
-<div class="w-full flex justify-center py-2 text-slate-500 cursor-pointer">
-<span class="material-symbols-outlined text-2xl">settings</span>
-</div>
-</div>
-</aside>
-<main class="flex-1 flex flex-col min-w-0">
-<header class="bg-background-dark border-b border-border-dark">
-<div class="flex items-center justify-between px-4 py-3">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-xl">terminal</span>
-<h1 class="text-sm font-bold tracking-tight uppercase opacity-80">Profile.md</h1>
-</div>
-<div class="flex items-center gap-3">
-<button class="flex items-center gap-1.5 px-3 py-1 rounded border border-primary/30 bg-primary/5 text-primary glitch-hover transition-all duration-200 focus:outline-none">
-<span class="material-symbols-outlined text-[18px] leading-none">cloud_upload</span>
-<span class="text-[10px] font-mono font-bold tracking-wider uppercase code-glow">Deploy</span>
-</button>
-<button class="text-slate-500 hover:text-white transition-colors">
-<span class="material-symbols-outlined">more_vert</span>
-</button>
-</div>
-</div>
-<nav class="flex overflow-x-auto no-scrollbar border-t border-border-dark">
-<a class="flex items-center gap-2 px-4 py-2 border-r border-border-dark shrink-0 opacity-50" href="#">
-<span class="text-xs text-orange-400">JS</span>
-<span class="text-xs font-medium">index.js</span>
-</a>
-<a class="flex items-center gap-2 px-4 py-2 border-r border-border-dark shrink-0 opacity-50" href="#">
-<span class="text-xs text-yellow-400 font-bold">{ }</span>
-<span class="text-xs font-medium">projects.json</span>
-</a>
-<a class="flex items-center gap-2 px-4 py-2 border-r border-border-dark shrink-0 bg-sidebar-dark border-t-2 border-t-primary" href="#">
-<span class="text-xs text-blue-400 font-bold">M↓</span>
-<span class="text-xs font-bold text-white">README.md</span>
-</a>
-</nav>
-</header>
-<section class="flex-1 overflow-y-auto p-6 space-y-8 bg-[#0d1117]">
-<div class="flex flex-col items-center gap-4 py-4">
-<div class="relative">
-<div class="w-32 h-32 rounded-full border-4 border-primary p-1 flex items-center justify-center overflow-hidden shadow-[0_0_15px_rgba(0,255,64,0.3)]">
-<img alt="Profile" class="w-full h-full object-cover rounded-full filter grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHMFr4fYTs7OlASxoI6-C144akrJ0Mg6QRXPry_UzNf9bOloAPnHFyXGBy3Ct1GlIaFzHx30UZnfBw-kA1LssBaXDauMoALX6dxarAbXrlqs5W7O2v0CTVKD8nDXwIeBqrcEQlJcaOZQ5t4FLGOmjAPvXQeugvtVNWL4mqwTgeiWGI8Q-VTnZmVDu6umHEx3S7FRdrxTkaPNUMZnjsm-Ww8XaLNgEWG_FZM848X6mduCd_hOSWRRxhrF3p2qff8SGjjYeo7vjHIob5"/>
-</div>
-<div class="absolute bottom-1 right-2 w-6 h-6 bg-primary rounded-full border-4 border-background-dark flex items-center justify-center">
-<span class="material-symbols-outlined text-[10px] text-background-dark font-black">check</span>
-</div>
-</div>
-<div class="text-center">
-<h2 class="text-2xl font-bold text-white mb-1">Mallela Ram Sai Teja</h2>
-<p class="text-primary font-mono text-sm">B.Tech Under graduate &amp; Electronics and Communication Engineering</p>
+    <div class="flex h-screen w-full overflow-hidden">
+        <aside class="w-16 flex flex-col items-center py-4 bg-sidebar-dark border-r border-border-dark shrink-0">
+            <div class="flex flex-col gap-6 items-center w-full">
+                <div
+                    class="w-full flex justify-center py-2 text-slate-500 hover:text-primary transition-colors cursor-pointer">
+                    <span class="material-symbols-outlined text-2xl">file_copy</span>
+                </div>
+                <div
+                    class="w-full flex justify-center py-2 text-slate-500 hover:text-primary transition-colors cursor-pointer">
+                    <span class="material-symbols-outlined text-2xl">search</span>
+                </div>
+                <div
+                    class="w-full flex justify-center py-2 text-slate-500 hover:text-primary transition-colors cursor-pointer">
+                    <span class="material-symbols-outlined text-2xl">account_tree</span>
+                </div>
+                <div class="sidebar-icon-active w-full flex justify-center py-2 text-primary">
+                    <span class="material-symbols-outlined text-2xl">person</span>
+                </div>
+            </div>
+            <div class="mt-auto flex flex-col gap-6 items-center w-full">
+                <div class="w-full flex justify-center py-2 text-slate-500 cursor-pointer">
+                    <span class="material-symbols-outlined text-2xl">settings</span>
+                </div>
+            </div>
+        </aside>
+        <main class="flex-1 flex flex-col min-w-0">
+            <header class="bg-background-dark border-b border-border-dark">
+                <div class="flex items-center justify-between px-4 py-3">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary text-xl">terminal</span>
+                        <h1 class="text-sm font-bold tracking-tight uppercase opacity-80">Profile.md</h1>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <button
+                            class="flex items-center gap-1.5 px-3 py-1 rounded border border-primary/30 bg-primary/5 text-primary glitch-hover transition-all duration-200 focus:outline-none">
+                            <span class="material-symbols-outlined text-[18px] leading-none">cloud_upload</span>
+                            <span
+                                class="text-[10px] font-mono font-bold tracking-wider uppercase code-glow">Deploy</span>
+                        </button>
+                        <button class="text-slate-500 hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">more_vert</span>
+                        </button>
+                    </div>
+                </div>
+                <nav class="flex overflow-x-auto no-scrollbar border-t border-border-dark">
+                    <a class="flex items-center gap-2 px-4 py-2 border-r border-border-dark shrink-0 opacity-50"
+                        href="#">
+                        <span class="text-xs text-orange-400">JS</span>
+                        <span class="text-xs font-medium">index.js</span>
+                    </a>
+                    <a class="flex items-center gap-2 px-4 py-2 border-r border-border-dark shrink-0 opacity-50"
+                        href="#">
+                        <span class="text-xs text-yellow-400 font-bold">{ }</span>
+                        <span class="text-xs font-medium">projects.json</span>
+                    </a>
+                    <a class="flex items-center gap-2 px-4 py-2 border-r border-border-dark shrink-0 bg-sidebar-dark border-t-2 border-t-primary"
+                        href="#">
+                        <span class="text-xs text-blue-400 font-bold">M↓</span>
+                        <span class="text-xs font-bold text-white">README.md</span>
+                    </a>
+                </nav>
+            </header>
+            <section class="flex-1 overflow-y-auto p-6 space-y-8 bg-[#0d1117]">
+                <div class="flex flex-col items-center gap-4 py-4">
+                    <div class="relative">
+                        <div
+                            class="w-32 h-32 rounded-full border-4 border-primary p-1 flex items-center justify-center overflow-hidden shadow-[0_0_15px_rgba(0,255,64,0.3)]">
+                            <img alt="Profile"
+                                class="w-full h-full object-cover rounded-full filter grayscale hover:grayscale-0 transition-all duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHMFr4fYTs7OlASxoI6-C144akrJ0Mg6QRXPry_UzNf9bOloAPnHFyXGBy3Ct1GlIaFzHx30UZnfBw-kA1LssBaXDauMoALX6dxarAbXrlqs5W7O2v0CTVKD8nDXwIeBqrcEQlJcaOZQ5t4FLGOmjAPvXQeugvtVNWL4mqwTgeiWGI8Q-VTnZmVDu6umHEx3S7FRdrxTkaPNUMZnjsm-Ww8XaLNgEWG_FZM848X6mduCd_hOSWRRxhrF3p2qff8SGjjYeo7vjHIob5" />
+                        </div>
+                        <div
+                            class="absolute bottom-1 right-2 w-6 h-6 bg-primary rounded-full border-4 border-background-dark flex items-center justify-center">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-background-dark font-black">check</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold text-white mb-1">Mallela Ram Sai Teja</h2>
+                        <p class="text-primary font-mono text-sm">B.Tech Under graduate &amp; Electronics and
+                            Communication Engineering</p>
 
-<div class="space-y-4">
-<div class="flex items-center gap-2 border-b border-border-dark pb-2">
-<span class="text-primary font-mono text-xl">#</span>
-<h3 class="text-lg font-bold text-white">About Me</h3>
-</div>
-<div class="bg-sidebar-dark/40 rounded-lg p-4 border border-border-dark/50">
-<pre class="font-mono text-sm text-slate-300 whitespace-pre-wrap leading-relaxed"><span class="text-primary"></span><span class="text-syntax-key">location</span>: "San Francisco, CA";
-<span class="text-syntax-key">status</span>: "Compiling world-class software";
-<span class="text-syntax-key">stack</span>: ["Rust", "Go", "TypeScript", "K8s"];</pre>
-</div>
-</div>
-<div class="space-y-4">
-<div class="flex items-center gap-2 border-b border-border-dark pb-2">
-<span class="text-primary font-mono text-xl">##</span>
-<h3 class="text-lg font-bold text-white">Verified Certifications</h3>
-</div>
-<div class="space-y-2">
-<div class="flex items-start gap-3 p-3 rounded bg-sidebar-dark/30 border border-border-dark hover:bg-sidebar-dark/50 transition-colors">
-<div class="mt-1">
-<span class="material-symbols-outlined text-primary text-xl">verified</span>
-</div>
-<div class="flex-1 min-w-0">
-<div class="flex items-center justify-between gap-2">
-<span class="text-sm font-mono text-primary truncate">AWS Certified Solutions Architect</span>
-<span class="text-[10px] text-slate-500 font-mono shrink-0">e4b7c2a</span>
-</div>
-<p class="text-xs text-slate-400 font-mono mt-1 italic">// Professional Grade - Dec 2023</p>
-</div>
-</div>
-<div class="flex items-start gap-3 p-3 rounded bg-sidebar-dark/30 border border-border-dark hover:bg-sidebar-dark/50 transition-colors">
-<div class="mt-1">
-<span class="material-symbols-outlined text-primary text-xl">verified</span>
-</div>
-<div class="flex-1 min-w-0">
-<div class="flex items-center justify-between gap-2">
-<span class="text-sm font-mono text-primary truncate">CKAD - Kubernetes Application Dev</span>
-<span class="text-[10px] text-slate-500 font-mono shrink-0">9f1d8e3</span>
-</div>
-<p class="text-xs text-slate-400 font-mono mt-1 italic">// Cloud Native Foundation - Aug 2023</p>
-</div>
-</div>
-<div class="flex items-start gap-3 p-3 rounded bg-sidebar-dark/30 border border-border-dark hover:bg-sidebar-dark/50 transition-colors">
-<div class="mt-1">
-<span class="material-symbols-outlined text-primary text-xl">verified</span>
-</div>
-<div class="flex-1 min-w-0">
-<div class="flex items-center justify-between gap-2">
-<span class="text-sm font-mono text-primary truncate">OSCP Security Professional</span>
-<span class="text-[10px] text-slate-500 font-mono shrink-0">2a0f5d4</span>
-</div>
-<p class="text-xs text-slate-400 font-mono mt-1 italic">// Offensive Security - Mar 2023</p>
-</div>
-</div>
-</div>
-</div>
-<div class="pt-8 pb-20">
-<button class="w-full py-3 border border-primary text-primary font-mono text-sm font-bold rounded-lg hover:bg-primary/10 transition-all flex items-center justify-center gap-2">
-<span class="material-symbols-outlined text-sm">download</span>
-                    DOWNLOAD_CV.PDF
-                </button>
-</div>
-</section>
-<footer class="h-6 bg-primary flex items-center justify-between px-3 text-[10px] font-bold text-background-dark shrink-0">
-<div class="flex items-center gap-3">
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[12px]">account_tree</span>
-<span>profile-view*</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[12px]">sync</span>
-<span>Up to date</span>
-</div>
-</div>
-<div class="flex items-center gap-3">
-<span>Markdown</span>
-<span>UTF-8</span>
-<span>Ln 1, Col 1</span>
-</div>
-</footer>
-</main>
-</div>
-<div class="fixed bottom-1 left-1/2 -translate-x-1/2 w-32 h-1 bg-white/10 rounded-full pointer-events-none"></div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-2 border-b border-border-dark pb-2">
+                                <span class="text-primary font-mono text-xl">#</span>
+                                <h3 class="text-lg font-bold text-white">About Me</h3>
+                            </div>
+                            <div class="bg-sidebar-dark/40 rounded-lg p-4 border border-border-dark/50">
+                                <pre class="font-mono text-sm text-slate-300 whitespace-pre-wrap leading-relaxed"><span class="text-primary"></span><span class="text-syntax-key">location</span>: "India, Andhrapradesh,Visakhapatnam";
+<span class="text-syntax-key">status</span>: "";
+<span class="text-syntax-key">stack</span>: [""];</pre>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-2 border-b border-border-dark pb-2">
+                                <span class="text-primary font-mono text-xl">##</span>
+                                <h3 class="text-lg font-bold text-white">Verified Certifications</h3>
+                            </div>
+                            <div class="space-y-2">
+                                <div
+                                    class="flex items-start gap-3 p-3 rounded bg-sidebar-dark/30 border border-border-dark hover:bg-sidebar-dark/50 transition-colors">
+                                    <div class="mt-1">
+                                        <span class="material-symbols-outlined text-primary text-xl">verified</span>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="flex items-center justify-between gap-2">
+                                            <span class="text-sm font-mono text-primary truncate">AWS Certified
+                                                Solutions Architect</span>
+                                            <span class="text-[10px] text-slate-500 font-mono shrink-0">e4b7c2a</span>
+                                        </div>
+                                        <p class="text-xs text-slate-400 font-mono mt-1 italic">// Professional Grade -
+                                            Dec 2023</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-start gap-3 p-3 rounded bg-sidebar-dark/30 border border-border-dark hover:bg-sidebar-dark/50 transition-colors">
+                                    <div class="mt-1">
+                                        <span class="material-symbols-outlined text-primary text-xl">verified</span>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="flex items-center justify-between gap-2">
+                                            <span class="text-sm font-mono text-primary truncate">CKAD - Kubernetes
+                                                Application Dev</span>
+                                            <span class="text-[10px] text-slate-500 font-mono shrink-0">9f1d8e3</span>
+                                        </div>
+                                        <p class="text-xs text-slate-400 font-mono mt-1 italic">// Cloud Native
+                                            Foundation - Aug 2023</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-start gap-3 p-3 rounded bg-sidebar-dark/30 border border-border-dark hover:bg-sidebar-dark/50 transition-colors">
+                                    <div class="mt-1">
+                                        <span class="material-symbols-outlined text-primary text-xl">verified</span>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="flex items-center justify-between gap-2">
+                                            <span class="text-sm font-mono text-primary truncate">OSCP Security
+                                                Professional</span>
+                                            <span class="text-[10px] text-slate-500 font-mono shrink-0">2a0f5d4</span>
+                                        </div>
+                                        <p class="text-xs text-slate-400 font-mono mt-1 italic">// Offensive Security -
+                                            Mar 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-8 pb-20">
+                            <button
+                                class="w-full py-3 border border-primary text-primary font-mono text-sm font-bold rounded-lg hover:bg-primary/10 transition-all flex items-center justify-center gap-2">
+                                <span class="material-symbols-outlined text-sm">download</span>
+                                DOWNLOAD_CV.PDF
+                            </button>
+                        </div>
+            </section>
+            <footer
+                class="h-6 bg-primary flex items-center justify-between px-3 text-[10px] font-bold text-background-dark shrink-0">
+                <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[12px]">account_tree</span>
+                        <span>profile-view*</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[12px]">sync</span>
+                        <span>Up to date</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span>Markdown</span>
+                    <span>UTF-8</span>
+                    <span>Ln 1, Col 1</span>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <div class="fixed bottom-1 left-1/2 -translate-x-1/2 w-32 h-1 bg-white/10 rounded-full pointer-events-none"></div>
 
-</body></html>
+</body>
+
+</html>
